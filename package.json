@@ -10,7 +10,7 @@
       "import": "./dist/mount.mjs",
       "require": "./dist/mount.js"
     },
-    "./styles": "./dist/globals.css"
+    "./styles": "./dist/mount.css"
   },
   "files": [
     "dist"
