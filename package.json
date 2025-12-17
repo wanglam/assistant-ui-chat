@@ -1,14 +1,16 @@
 {
   "name": "assistant-ui-chat",
   "version": "0.1.0",
-  "main": "./dist/mount.cjs",
-  "module": "./dist/mount.js",
+  "main": "./dist/mount.js",
+  "module": "./dist/mount.mjs",
+  "browser": "./dist/mount.mjs",
   "types": "./dist/mount.d.ts",
   "exports": {
     ".": {
       "types": "./dist/mount.d.ts",
       "import": "./dist/mount.mjs",
-      "require": "./dist/mount.js"
+      "require": "./dist/mount.js",
+      "browser": "./dist/mount.mjs"
     },
     "./styles": "./dist/mount.css"
   },
