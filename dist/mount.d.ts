@@ -1,6 +1,12 @@
-declare const mount: ({ api, element, }: {
-    api: string;
-    element: HTMLElement;
-}) => () => void;
+import { HttpChatTransportInitOptions, UIMessage } from 'ai';
 
-export { mount };
+interface ChatWindowProps {
+    transportOptions: HttpChatTransportInitOptions<UIMessage>;
+}
+
+interface MountOptions extends ChatWindowProps {
+    element: HTMLElement;
+}
+declare const mount: ({ transportOptions, element }: MountOptions) => () => void;
+
+export { type MountOptions, mount };
